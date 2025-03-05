@@ -1,0 +1,40 @@
+.mockups-container {
+    max-width: 1200px;  
+    margin: 0 auto;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10vh;
+
+}
+
+.mockups-carousel {
+    position: relative;
+    margin: 0 auto;
+    border-radius: 8px;
+    height: 650px; /* Altura ajustada para mostrar mejor los mockups */
+}
+
+.mockups-carousel-inner {
+    height: 100%;
+}
+
+.mockups-carousel-item {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mockups-carousel-item img {
+    border-radius: 8px;
+    max-height: 100%;
+    width: auto; /* Ancho automático para mantener la proporción */
+    max-width: 80%; /* Limitar el ancho para que no sea demasiado grande */
+    object-fit: contain; /* 'contain' asegura que la imagen completa sea visible */
+}
+
+/* Agregar un fondo suave para contrastar con los mockups */
+.carousel-item {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}

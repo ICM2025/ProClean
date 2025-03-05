@@ -1,0 +1,68 @@
+<div class="proyecto-container">
+    <div class="proyecto-header">
+      <h1 class="proyecto-title">ProClean</h1>
+      <div class="proyecto-description">
+        <p>Una aplicación móvil que conecta a usuarios con profesionales de servicios domésticos de manera rápida, segura y eficiente.</p>
+        <p>A través de la app, los clientes pueden buscar, contratar y calificar trabajadores cercanos, mientras que los trabajadores pueden registrarse, recibir solicitudes en tiempo real y gestionar su disponibilidad.</p>
+      </div>
+    </div>
+  
+    <div class="info-section">
+      <div class="section-half">
+        <div class="section-header">
+          <div class="section-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h2>Servicios Disponibles</h2>
+        </div>
+        
+        <div class="cards-container">
+          <div class="service-card" *ngFor="let servicio of servicios">
+            <div class="card-icon">
+              <i class="fas {{ servicio.icono }}"></i>
+            </div>
+            <div class="card-content">
+              <h3>{{ servicio.nombre }}</h3>
+              <p>{{ servicio.descripcion }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="section-half">
+        <div class="section-header">
+          <div class="section-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h2>Tecnología e Innovación</h2>
+        </div>
+        
+        <div class="sensor-section">
+          <h3>Sensores Utilizados</h3>
+          <div class="sensor-grid">
+            <div class="sensor-card" *ngFor="let sensor of sensores">
+              <div class="sensor-icon">
+                <i class="fas {{ sensor.icono }}"></i>
+              </div>
+              <div class="sensor-info">
+                <h4>{{ sensor.nombre }}</h4>
+                <p>{{ sensor.descripcion }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="benefits-section">
+          <h3>Beneficios Clave</h3>
+          <ul class="benefits-list">
+            <li><i class="fas fa-check"></i> Búsqueda por geolocalización</li>
+            <li><i class="fas fa-check"></i> Verificación de identidad</li>
+            <li><i class="fas fa-check"></i> Sistema de calificaciones</li>
+            <li><i class="fas fa-check"></i> Notificaciones en tiempo real</li>
+            <li><i class="fas fa-check"></i> Pagos seguros dentro de la app</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+  

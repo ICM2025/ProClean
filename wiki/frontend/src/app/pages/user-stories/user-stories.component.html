@@ -1,1 +1,50 @@
-<p>user-stories works!</p>
+<div class="user-stories-container">
+  
+    <div class="stories-content">
+      <section class="stories-list">
+        <div class="story-card" *ngFor="let story of userStories" (click)="openStoryDetails(story)">
+          <div class="story-header">
+            <span class="story-id">HU-{{ story.id }}</span>
+            <h3 class="story-title">{{ story.title }}</h3>
+          </div>
+          <div class="story-body">
+            <p class="story-text">
+              Como <span class="highlight">{{ story.role }}</span>, quiero 
+              <span class="highlight">{{ story.feature }}</span> para 
+              <span class="highlight">{{ story.benefit }}</span>.
+            </p>
+          </div>
+          <div class="story-footer">
+            <span class="criteria-count">{{ story.acceptanceCriteria.length }} criterios de aceptación</span>
+            <button class="btn-details">Ver detalles</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+    <!-- Modal para detalles de historia de usuario -->
+    <app-stories-modal 
+      [title]="selectedStory ? 'Historia de Usuario HU-' + selectedStory.id : ''" 
+      [showModal]="showModal" 
+      (close)="closeModal()">
+      <div class="story-detail-content" *ngIf="selectedStory">
+        <h3 class="modal-story-title">{{ selectedStory?.title }}</h3>
+        
+        <div class="story-narrative">
+          <p>
+            <strong>Como</strong> {{ selectedStory?.role }},<br>
+            <strong>Quiero</strong> {{ selectedStory?.feature }},<br>
+            <strong>Para</strong> {{ selectedStory?.benefit }}.
+          </p>
+        </div>
+        <div class="acceptance-criteria">
+          <h3>Criterios de aceptación:</h3>
+          <ul>
+            <li *ngFor="let criteria of selectedStory.acceptanceCriteria">
+              {{ criteria }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </app-stories-modal>
+</div>

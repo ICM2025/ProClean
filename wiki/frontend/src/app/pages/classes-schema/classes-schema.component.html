@@ -1,1 +1,27 @@
-<p>classes-schema works!</p>
+<div class="image-page-container">
+    <div class="page-header">
+      <h1>Arquitectura ProClean</h1>
+      <p>Haz clic en la imagen para ampliarla</p>
+    </div>
+    
+    <div 
+      class="image-container" 
+      [class.expanded]="isImageExpanded" 
+      [class.clickable]="!isImageExpanded"
+      (click)="toggleImageSize()">
+      <img src="assets/classes-diagram.png" alt="Arquitectura de ProClean" class="feature-image">
+      
+      <div class="zoom-indicator" *ngIf="!isImageExpanded">
+        <i class="fas fa-search-plus"></i>
+        <span>Ampliar</span>
+      </div>
+      
+      <button class="close-button" *ngIf="isImageExpanded" (click)="toggleImageSize(); $event.stopPropagation()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    
+    <div class="image-caption">
+      <p>Diagrama de la arquitectura de la aplicación ProClean, mostrando la interacción entre los diferentes componentes del sistema.</p>
+    </div>
+</div>
