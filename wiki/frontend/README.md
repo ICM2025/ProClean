@@ -1,27 +1,63 @@
-# Frontend
+# ProClean Wiki
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+## 📝 Descripción
+Esta aplicación web desarrollada en Angular sirve como documentación técnica del proyecto ProClean, una plataforma que conecta a usuarios con profesionales de servicios domésticos. La wiki presenta información sobre el equipo, historias de usuario, arquitectura y diseños de interfaz.
 
-## Development server
+## ✨ Características
+- 👥 Página de equipo con información de los desarrolladores
+- 📋 Descripción general del proyecto ProClean
+- 📚 Documentación de historias de usuario con criterios de aceptación
+- 📊 Visualización del diagrama de clases
+- 🎨 Galería de mockups de la interfaz de usuario
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Instalación y Ejecución
 
-## Code scaffolding
+### Requisitos Previos
+- Node.js (versión 16 o superior)
+- Angular CLI
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Pasos de Instalación
 
-## Build
+1. Clonar el repositorio
+```bash
+git clone [URL_DEL_REPOSITORIO]
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Navegar al directorio del proyecto
+```bash
+cd proclean-wiki
+```
 
-## Running unit tests
+3. Instalar dependencias
+```bash
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. Iniciar el servidor de desarrollo
+```bash
+ng serve
+```
 
-## Running end-to-end tests
+5. Abrir en el navegador
+```
+http://localhost:4200/
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🗺️ Rutas de la Aplicación
 
-## Further help
+| Ruta | Descripción |
+|------|-------------|
+| `/` | Página del equipo (página principal) |
+| `/project-overview` | Descripción general del proyecto |
+| `/user-stories` | Historias de usuario |
+| `/class-schema` | Diagrama de clases |
+| `/mockups` | Diseños de interfaz |
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🛠️ Tecnologías
+
+- Angular 16+
+- TypeScript
+- HTML5 & CSS3
+
+## 👥 Equipo
+Desarrollado por © Team Dinamita - 2024
