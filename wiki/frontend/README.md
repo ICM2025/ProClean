@@ -25,7 +25,7 @@ git clone [URL_DEL_REPOSITORIO]
 
 2. Navegar al directorio del proyecto
 ```bash
-cd proclean-wiki
+cd wiki/frontend
 ```
 
 3. Instalar dependencias
@@ -35,7 +35,10 @@ npm install
 
 4. Iniciar el servidor de desarrollo
 ```bash
+### No se ejecuta automaticamente
 ng serve
+### Se ejecuta automaticamente
+ng serve -o
 ```
 
 5. Abrir en el navegador
@@ -60,4 +63,4 @@ http://localhost:4200/
 - HTML5 & CSS3
 
 ## 👥 Equipo
-Desarrollado por © Team Dinamita - 2024
+Desarrollado por © Team Dinamita - 2025
