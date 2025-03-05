@@ -1,25 +1,16 @@
-# 🧹 ProClean
+# ProClean Wiki
 
-## 📝 Descripción General
-ProClean es una plataforma innovadora diseñada para revolucionar el sector de servicios domésticos. El proyecto se divide en dos componentes principales:
+## 📝 Descripción
+Esta aplicación web desarrollada en Angular sirve como documentación técnica del proyecto ProClean, una plataforma que conecta a usuarios con profesionales de servicios domésticos. La wiki presenta información sobre el equipo, historias de usuario, arquitectura y diseños de interfaz.
 
-### 🏠 Aplicación Principal ProClean
-Una aplicación móvil que conecta a usuarios que necesitan servicios de limpieza con profesionales calificados. Características principales:
-- Búsqueda y contratación de servicios de limpieza
-- Perfiles verificados de profesionales
-- Sistema de reservas y pagos
-- Calificaciones y reseñas
-- Seguimiento en tiempo real del servicio
+## ✨ Características
+- 👥 Página de equipo con información de los desarrolladores
+- 📋 Descripción general del proyecto ProClean
+- 📚 Documentación de historias de usuario con criterios de aceptación
+- 📊 Visualización del diagrama de clases
+- 🎨 Galería de mockups de la interfaz de usuario
 
-### 📚 Wiki de Documentación Técnica
-Esta es la wiki que estás visualizando actualmente. Sirve como documentación técnica completa del proyecto ProClean, proporcionando:
-- 👥 Información del equipo de desarrollo
-- 📋 Visión general y objetivos del proyecto
-- 📚 Historias de usuario detalladas
-- 📊 Documentación de arquitectura y diagramas
-- 🎨 Diseños de interfaz y mockups
-
-## 🚀 Instalación y Ejecución de la Wiki
+## 🚀 Instalación y Ejecución
 
 ### Requisitos Previos
 - Node.js (versión 16 o superior)
@@ -32,7 +23,7 @@ Esta es la wiki que estás visualizando actualmente. Sirve como documentación t
 git clone https://github.com/ICM2025/ProClean.git
 ```
 
-2. Navegar al directorio de la wiki
+2. Navegar al directorio del proyecto
 ```bash
 cd wiki/frontend
 ```
@@ -44,40 +35,32 @@ npm install
 
 4. Iniciar el servidor de desarrollo
 ```bash
-# No se ejecuta automáticamente
+### No se ejecuta automaticamente
 ng serve
-
-# Se ejecuta automáticamente en el navegador
+### Se ejecuta automaticamente
 ng serve -o
 ```
 
-5. Acceder a la wiki
+5. Abrir en el navegador
 ```
 http://localhost:4200/
 ```
 
-## 🗺️ Estructura de la Wiki
+## 🗺️ Rutas de la Aplicación
 
 | Ruta | Descripción |
 |------|-------------|
-| `/` | Página principal - Información del equipo |
-| `/project-overview` | Visión general de ProClean |
-| `/user-stories` | Historias de usuario y requerimientos |
-| `/class-schema` | Arquitectura y diagramas técnicos |
-| `/mockups` | Diseños de interfaz y prototipos |
+| `/` | Página del equipo (página principal) |
+| `/project-overview` | Descripción general del proyecto |
+| `/user-stories` | Historias de usuario |
+| `/class-schema` | Diagrama de clases |
+| `/mockups` | Diseños de interfaz |
 
 ## 🛠️ Tecnologías
 
-### Wiki
 - Angular 16+
 - TypeScript
 - HTML5 & CSS3
 
-### Aplicación Principal (En desarrollo)
-- React Native
-- Node.js
-- MongoDB
-- Express.js
-
 ## 👥 Equipo
-Desarrollado con 💙 por © Team Dinamita - 2025
+Desarrollado por © Team Dinamita - 2025
