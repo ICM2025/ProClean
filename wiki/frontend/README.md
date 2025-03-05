@@ -20,7 +20,7 @@ Esta aplicación web desarrollada en Angular sirve como documentación técnica 
 
 1. Clonar el repositorio
 ```bash
-git clone [URL_DEL_REPOSITORIO]
+git clone https://github.com/ICM2025/ProClean.git
 ```
 
 2. Navegar al directorio del proyecto

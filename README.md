@@ -29,7 +29,7 @@ Esta es la wiki que estás visualizando actualmente. Sirve como documentación t
 
 1. Clonar el repositorio
 ```bash
-git clone [URL_DEL_REPOSITORIO]
+git clone https://github.com/ICM2025/ProClean.git
 ```
 
 2. Navegar al directorio de la wiki
