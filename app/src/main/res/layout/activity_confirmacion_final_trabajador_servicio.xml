@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".confirmacion_final_trabajador_servicio"
+    android:background="@color/Fondo_pantalla">
+
+    <!-- TextView para "Servicio de:" (más grande) -->
+    <TextView
+        android:id="@+id/servicioDeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Servicio de:"
+        android:textSize="24sp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginTop="48dp"
+    android:layout_marginStart="24dp"/>
+
+    <!-- TextView para el nombre del cliente (dinámico) -->
+    <TextView
+        android:id="@+id/nombreClienteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Cliente"
+    android:textSize="24sp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    app:layout_constraintTop_toTopOf="@id/servicioDeTextView"
+    app:layout_constraintStart_toEndOf="@id/servicioDeTextView"
+    android:layout_marginStart="16dp"/>
+
+    <!-- TextView grande para "El usuario confirmó el servicio" -->
+    <TextView
+        android:id="@+id/confirmacionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="El usuario confirmó el servicio"
+        android:textSize="28sp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:gravity="center"
+    app:layout_constraintTop_toBottomOf="@id/servicioDeTextView"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="48dp"
+    android:layout_marginHorizontal="24dp"/>
+
+    <!-- TextView para "Estado:" en color verde -->
+    <TextView
+        android:id="@+id/estadoLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado:"
+        android:textSize="24sp"
+    android:textColor="@color/green"
+    android:textStyle="bold"
+    app:layout_constraintTop_toBottomOf="@id/confirmacionTextView"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginTop="48dp"
+    android:layout_marginStart="24dp"/>
+
+    <!-- TextView para "Servicio aceptado" -->
+    <TextView
+        android:id="@+id/estadoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Servicio aceptado"
+        android:textSize="24sp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    app:layout_constraintTop_toTopOf="@id/estadoLabelTextView"
+    app:layout_constraintStart_toEndOf="@id/estadoLabelTextView"
+    android:layout_marginStart="16dp"/>
+
+    <!-- Botón "Volver al menú" -->
+    <Button
+        android:id="@+id/volverMenuButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Volver al menú"
+        android:textSize="20sp"
+    android:textColor="@color/white"
+    android:backgroundTint="@color/botones_color"
+    android:textStyle="bold"
+    app:layout_constraintTop_toBottomOf="@id/estadoLabelTextView"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="48dp"
+    android:layout_marginHorizontal="40dp"
+    android:padding="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
