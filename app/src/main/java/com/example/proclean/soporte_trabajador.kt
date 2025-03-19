@@ -24,6 +24,8 @@ class soporte_trabajador : AppCompatActivity() {
         }
 
         binding.enviarSoporteButton.setOnClickListener{
+            val i =Intent(baseContext,confirmacion_soporte_trabajador::class.java)
+            startActivity(i)
 
 
         }
