@@ -74,7 +74,7 @@
         android:id="@+id/btnOpcion3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Metodo de pago"
+        android:text="Soporte"
         android:backgroundTint="@color/botones_color"
         android:textSize="18sp"
         android:textStyle="bold"

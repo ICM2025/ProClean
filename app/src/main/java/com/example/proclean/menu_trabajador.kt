@@ -23,5 +23,17 @@ class menu_trabajador : AppCompatActivity() {
 
         }
 
+        binding.btnOpcion2.setOnClickListener{
+
+            val i = Intent(baseContext,historial_de_servicios_trabajador::class.java)
+            startActivity(i)
+
+        }
+
+        binding.btnOpcion3.setOnClickListener{
+            val i = Intent(baseContext,soporte_trabajador::class.java)
+            startActivity(i)
+        }
+
     }
 }

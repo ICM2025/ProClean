@@ -17,6 +17,15 @@
         android:theme="@style/Theme.Proclean"
         tools:targetApi="31">
         <activity
+            android:name=".confirmacion_soporte_trabajador"
+            android:exported="false" />
+        <activity
+            android:name=".soporte_trabajador"
+            android:exported="false" />
+        <activity
+            android:name=".ver_servicio_especifico"
+            android:exported="false" />
+        <activity
             android:name=".confirmacion_final_trabajador_servicio"
             android:exported="false" />
         <activity
