@@ -1,5 +1,6 @@
 package com.example.proclean
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,7 +21,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        binding.btnRegistro.setOnClickListener{
+            val i = Intent(baseContext,registro_general::class.java)
+            startActivity(i)
+        }
+
+        binding.btnIniciarSesion.setOnClickListener{
+            val i = Intent(baseContext,iniciar_sesion_general::class.java)
+            startActivity(i)
+
+
+        }
+
+
+        }
+
+
     }
 
 
-}

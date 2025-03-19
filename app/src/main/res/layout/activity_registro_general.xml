@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@id/logo" />
 
     <Button
-        android:id="@+id/button_trabajador"
+        android:id="@+id/btn_trabajador"
         android:layout_width="238dp"
         android:layout_height="69dp"
         android:layout_marginBottom="100dp"
@@ -55,7 +55,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button_cliente"
+        android:id="@+id/btn_cliente"
         android:layout_width="231dp"
         android:layout_height="65dp"
         android:layout_marginBottom="200dp"

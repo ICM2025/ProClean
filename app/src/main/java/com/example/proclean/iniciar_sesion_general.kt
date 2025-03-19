@@ -5,16 +5,17 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.proclean.databinding.ActivityConfirmacionFinalTrabajadorServicioBinding
+import com.example.proclean.databinding.ActivityIniciarSesionGeneralBinding
 
 class iniciar_sesion_general : AppCompatActivity() {
+    private lateinit var binding: ActivityIniciarSesionGeneralBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_iniciar_sesion_general)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+        binding = ActivityIniciarSesionGeneralBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
+
     }
 }
