@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".confirmacion_soporte_trabajador"
+    android:background="@color/Fondo_pantalla">
+
+    <!-- ImageView para el logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/logo"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/confirmacionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Su solicitud fue enviada satisfactoriamente al profesional"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="24dp"/>
+
+    <!-- Botón "Volver al menú" -->
+    <Button
+        android:id="@+id/volverMenuButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Volver al menú"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/botones_color"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/confirmacionTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="40dp"
+        android:padding="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

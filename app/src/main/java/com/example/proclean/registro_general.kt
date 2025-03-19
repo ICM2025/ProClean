@@ -18,16 +18,14 @@ class registro_general : AppCompatActivity() {
 
 
         binding.btnCliente.setOnClickListener{
-
-
+            val i = Intent(this, RegistroCliente::class.java)
+            startActivity(i)
 
         }
 
         binding.btnTrabajador.setOnClickListener{
             val i = Intent(baseContext,registro_trabajador::class.java)
             startActivity(i)
-
-
 
         }
 

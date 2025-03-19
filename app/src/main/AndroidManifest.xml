@@ -70,6 +70,60 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".RegistroCliente"
+            android:exported="false"/>
+        <activity
+            android:name=".ClienteDatosContacto"
+            android:exported="false"/>
+        <activity
+            android:name=".RegistroExitosoCliente"
+            android:exported="false"/>
+        <activity
+            android:name=".ServiciosPreferidosActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".PrincipalClienteActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".MenuClienteActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".SoporteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmacionSoporteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleProfesionalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SolicitarServicioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SolicitudExitosaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistorialServiciosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleServicioProgresoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NfcConfirmacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalificarAtencionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmacionInicioServicioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerRutaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerCercanosActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

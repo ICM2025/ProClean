@@ -1,4 +1,21 @@
 <resources>
     <string name="app_name">Proclean</string>
     <string name="title_activity_buscar_servicios_trabajador">buscar_servicios_trabajador</string>
+    <string name="bienvenido">¡Bienvenido!</string>
+    <string name="nombre">Nombre:</string>
+    <string name="apellido">Apellido:</string>
+    <string name="direccion_de_residencia">Direccion de residencia:</string>
+    <string name="tus_datos_de_contacto">Tus datos de contacto</string>
+    <string name="telefono">Numero de telefono:\n</string>
+    <string name="ingresa_tu_numero_de_celular">Ingresa tu numero de celular</string>
+    <string name="correo">Correo electronico</string>
+    <string name="ingresa_tu_correo_electronico">Ingresa tu correo electronico</string>
+    <string name="t_rminos_y_condiciones">Términos y condiciones</string>
+    <string name="acepto_el_tratamiento_de_mis_datos_personales_seg_n_la_pol_tica_de_privacidad">Acepto el tratamiento de mis datos personales según la política de privacidad</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="omitir">Omitir</string>
+    <string name="nombre_del_cliente">Nombre del cliente</string>
+    <string name="elige_tus_servicios_preferidos">Elige tus servicios preferidos</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="el_servicio_ha_comenzado">El servicio ha comenzado</string>
 </resources>
